@@ -45,7 +45,6 @@ public class UserController extends BaseController {
         }
         //用户登录服务，用来校验用户登录是否合法
         UserModel userModel = userService.validateLogin(telphone, this.encodeByMd5(password));
-        //将登陆凭证加入到用户登陆成功的session内
 
         //修改成若用户登录验证成功后将对应的登录信息和登录凭证一起存入redis中
 
